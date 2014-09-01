@@ -12,6 +12,6 @@ angular.module('yoTodoApp')
     $scope.todos = [
       'Item 1',
       'Item 2',
-      'Karma'
+      'Item 3'
     ];
   });

@@ -1,7 +1,22 @@
 <div class="container">
-<h2>Yo-Todos</h2>
-<p class="form-group" ng-repeat="todo in todos">
-  <input class="form-control" type="text" ng-model="todo">
-</p>
+  <h2>Yo-Todos</h2>
+
+  <!-- Input for Todo items -->
+  <form role="form" ng-submit="addTodo()">
+    <div class="row">
+      <div class="input-group">
+        <input class="form-control" type="text" ng-model="todo" placeholder="What do you want to get done?">
+        <span class="input-group-btn">
+          <input class="btn btn-primary" type="submit" value="Add Item">
+        </span>
+      </div>
+    </div>
+  </form>
+  <p></p>
+
+  <!-- Todo list -->
+  <p class="form-group" ng-repeat="todo in todos">
+    <input class="form-control" type="text" ng-model="todo">
+  </p>
 
 </div>
