@@ -15,8 +15,11 @@
   <p></p>
 
   <!-- Todo list -->
-  <p class="form-group" ng-repeat="todo in todos">
+  <p class="input-group" ng-repeat="todo in todos">
     <input class="form-control" type="text" ng-model="todo">
+    <span class="input-group-btn">
+      <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+    </span>
   </p>
 
 </div>
